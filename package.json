@@ -1,0 +1,14 @@
+{
+  "name": "sitoo-automation-testassignment",
+  "version": "1.0.0",
+  "description": "This is sitoo website automation assignment repository, which contains basic tests.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4"
+  }
+}
