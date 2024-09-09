@@ -11,13 +11,13 @@ class hamburgerMenu {
     private readonly platformOption = 'text="Platform"';
     private readonly customersOption = 'text="Customers"';
     private readonly partnersOption = 'text="Partners"';
-    private readonly resourcesOption = 'body > div.MuiDrawer-root.MuiDrawer-modal.MegaMenu_megaMenuDrawer__Q1B_q.MuiModal-root.css-y28f86 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight.css-1ab2xsx > div.MegaMenuDesktop_megaMenuDesktop__lNj3H > div > div.MegaMenuDesktop_primaryMenu__JFRRg > div > div:nth-child(4) > a > div.MegaMenuItem_link__G_2Xk';
+    private readonly resourcesOption = '.MegaMenuItem_container__nJsmS .MegaMenuItem_link__G_2Xk';
     private readonly resourcesLibrary = 'text="Resource library"';
     private readonly contactOption = 'text="Contact"';
 
     // Hamburger mobile selectors
-    private readonly mobileResourcesOption = 'body > div.MuiDrawer-root.MuiDrawer-modal.MegaMenu_megaMenuDrawer__Q1B_q.MuiModal-root.css-y28f86 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight.css-1ab2xsx > div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > a';
-    private readonly mobileResourcesLibrary = 'body > div.MuiDrawer-root.MuiDrawer-modal.MegaMenu_megaMenuDrawer__Q1B_q.MuiModal-root.css-y28f86 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight.css-1ab2xsx > div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(3) > a';
+    private readonly mobileResourcesOption = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > a > div.MegaMenuItem_link__G_2Xk';
+    private readonly mobileResourcesLibrary = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(3) > a';
 
     constructor(page: Page) {
         this.page = page;

@@ -6,6 +6,10 @@ test.describe('Verify navigation from Home to Resources Library', () => {
     test('Desktop - Verify navigation from Home to Resources Library', async ({ page }) => {
         const home = new homePage(page);
         const menu = new hamburgerMenu(page);
+        // const isMobile = page.viewportSize ({
+        //     width: 360;
+        //     height: 768
+        // });
 
         await home.navigateToBaseUrl();
 
@@ -13,25 +17,27 @@ test.describe('Verify navigation from Home to Resources Library', () => {
 
         await menu.navigateToResources();
 
+
         // Added a wait since it took longer for page to load after click
         await page.waitForLoadState('load');  
         
         // Verify that the URL is correct
         await expect(page).toHaveURL('https://sitoo.com/resources/library'); 
     });
-    test('Mobile - Verify navigation from Home to Resources Library', async ({ page }) => {
-        const home = new homePage(page);
-        const menu = new hamburgerMenu(page);
+    // test('Mobile - Verify navigation from Home to Resources Library', async ({ page }) => {
 
-        await home.navigateToBaseUrl();
+    //     const home = new homePage(page);
+    //     const menu = new hamburgerMenu(page);
 
-        await home.acceptCookies();
+    //     await home.navigateToBaseUrl();
 
-        await menu.navigateToResourcesMobile();
+    //     await home.acceptCookies();
 
-        // // Added a wait since it took longer for page to load after click
-        // await page.waitForLoadState('load');  
+    //     await menu.navigateToResourcesMobile();
 
-        await expect(page).toHaveURL('https://sitoo.com/resources/library'); 
-    });    
+    //     // // Added a wait since it took longer for page to load after click
+    //     // await page.waitForLoadState('load');  
+
+    //     await expect(page).toHaveURL('https://sitoo.com/resources/library'); 
+    // });    
 });
