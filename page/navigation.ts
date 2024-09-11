@@ -11,8 +11,8 @@ class hamburgerMenu {
     private readonly platformOption = 'text="Platform"';
     private readonly customersOption = 'text="Customers"';
     private readonly partnersOption = 'text="Partners"';
-    private readonly resourcesOption = '.MegaMenuItem_container__nJsmS .MegaMenuItem_link__G_2Xk';
-    private readonly resourcesLibrary = 'text="Resource library"';
+    private readonly resourcesOption = 'div.MegaMenuDesktop_megaMenuDesktop__lNj3H > div > div.MegaMenuDesktop_primaryMenu__JFRRg > div > div:nth-child(4) > a';
+    private readonly resourcesLibrary = 'div.MegaMenuDesktop_secondaryMenu__FBqTC.MegaMenuDesktop_secondaryMenu--has-children__3Gokq > div > div:nth-child(3) > a > div.MegaMenuItem_link__G_2Xk';
     private readonly contactOption = 'text="Contact"';
 
     // Hamburger mobile selectors
