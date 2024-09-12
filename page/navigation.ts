@@ -2,22 +2,22 @@
 import { Page } from 'playwright';
 
 class hamburgerMenu {
-    private readonly page: Page;
+    readonly page: Page;
     
     // Hamburger menu selectors
-    private readonly hamburgerMenuButton = '.Hamburger_button__aDuFV';
-    private readonly closeButton = '.MuiButton-root MegaMenuDesktop_close-button___hzPW'; 
-    private readonly posOption = 'text="Point of sale"';
-    private readonly platformOption = 'text="Platform"';
-    private readonly customersOption = 'text="Customers"';
-    private readonly partnersOption = 'text="Partners"';
-    private readonly resourcesOption = 'div.MegaMenuDesktop_megaMenuDesktop__lNj3H > div > div.MegaMenuDesktop_primaryMenu__JFRRg > div > div:nth-child(4) > a';
-    private readonly resourcesLibrary = 'div.MegaMenuDesktop_secondaryMenu__FBqTC.MegaMenuDesktop_secondaryMenu--has-children__3Gokq > div > div:nth-child(3) > a > div.MegaMenuItem_link__G_2Xk';
-    private readonly contactOption = 'text="Contact"';
+    readonly hamburgerMenuButton = '.Hamburger_button__aDuFV';
+    readonly closeButton = '.MuiButton-root MegaMenuDesktop_close-button___hzPW'; 
+    readonly posOption = 'text="Point of sale"';
+    readonly platformOption = 'text="Platform"';
+    readonly customersOption = 'text="Customers"';
+    readonly partnersOption = 'text="Partners"';
+    readonly resourcesOption = 'div.MegaMenuDesktop_megaMenuDesktop__lNj3H > div > div.MegaMenuDesktop_primaryMenu__JFRRg > div > div:nth-child(4) > a';
+    readonly resourcesLibrary = 'div.MegaMenuDesktop_secondaryMenu__FBqTC.MegaMenuDesktop_secondaryMenu--has-children__3Gokq > div > div:nth-child(3) > a > div.MegaMenuItem_link__G_2Xk';
+    readonly contactOption = 'text="Contact"';
 
     // Hamburger mobile selectors
-    private readonly mobileResourcesOption = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > a > div.MegaMenuItem_link__G_2Xk';
-    private readonly mobileResourcesLibrary = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(3) > a';
+    readonly mobileResourcesOption = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > a > div.MegaMenuItem_link__G_2Xk';
+    readonly mobileResourcesLibrary = 'div.MegaMenuMobile_megaMenuMobile__dRPQG > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(3) > a';
 
     constructor(page: Page) {
         this.page = page;
