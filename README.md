@@ -17,7 +17,7 @@ Before running the tests, ensure you have the following installed:
 ### Install Playwright
 To install Playwright, run the following command in your terminal:
 ```bash
-npm install @playwright/test
+npm install @playwright/latest - preferable option, since it includes latest options available
 
 ### In order to run test suit use following commands:
 For visual run, please feel free to use 
@@ -28,3 +28,14 @@ npx playwright test
 
 While running specific test, please use 
 npx playwright test <nameOfTheTest>
+
+### Test Structure
+
+Page Object Models (POM): Organized under /page-objects/, reusable functions to interact with different parts of the website.
+Tests: Under /tests/, interact with POMs and contain assertions.
+
+### GitHub CI Integration
+
+GitHub Actions Workflow
+The project is configured to run tests automatically using GitHub CI. The configuration file is located in .github/workflows/playwright.yml.
+
