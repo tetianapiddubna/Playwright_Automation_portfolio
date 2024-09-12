@@ -12,10 +12,19 @@ The test suite includes:
 Before running the tests, ensure you have the following installed:
 - [Node.js](https://nodejs.org/en/download/) (version 14 or higher)
 - [Playwright](https://playwright.dev/)
-- [TypeScript](https://www.typescriptlang.org/) (optional but recommended)
+- [TypeScript](https://www.typescriptlang.org/) (optional but highlyrecommended)
 
 ### Install Playwright
 To install Playwright, run the following command in your terminal:
 ```bash
 npm install @playwright/test
 
+### In order to run test suit use following commands:
+For visual run, please feel free to use 
+npx playwright test --ui
+
+For headless run use
+npx playwright test 
+
+While running specific test, please use 
+npx playwright test <nameOfTheTest>

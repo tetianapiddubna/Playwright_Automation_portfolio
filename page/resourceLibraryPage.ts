@@ -18,12 +18,12 @@
     this.secondDropdown = page.locator('select[name="plcf_topic_taxonomy"]'); 
     this.mobileFilter = page.locator('.PostListClientFilters_postListClientFiltersHeader__CHXaQ');
   }
-  async acceptCookies() {
-    const acceptCookies = this.page.getByRole('button', { 
-        name: 'Allow all',
-    });
-    await acceptCookies.click();
-  }
+//   async acceptCookies() {
+//     const acceptCookies = this.page.getByRole('button', { 
+//         name: 'Allow all',
+//     });
+//     await acceptCookies.click();
+//   }
   async activateMobileFilter() {
     await this.mobileFilter.click();
   }
